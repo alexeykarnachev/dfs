@@ -1,3 +1,6 @@
+import sys
+sys.path.append('../src/')
+
 import json
 from sklearn.model_selection import KFold
 from xgboost import XGBClassifier

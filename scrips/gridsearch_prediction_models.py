@@ -1,3 +1,6 @@
+import sys
+sys.path.append('../src/')
+
 import json
 from sklearn.linear_model import LogisticRegression
 from xgboost import XGBClassifier

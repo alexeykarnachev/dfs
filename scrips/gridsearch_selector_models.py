@@ -1,3 +1,6 @@
+import sys
+sys.path.append('../src/')
+
 from dfs.utils import *
 import json
 from sklearn.model_selection import GridSearchCV

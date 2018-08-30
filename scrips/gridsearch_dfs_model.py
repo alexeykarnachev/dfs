@@ -1,3 +1,6 @@
+import sys
+sys.path.append('../src/')
+
 from sklearn.model_selection import KFold
 from itertools import product
 from dfs.DFSModel import DFSModel
