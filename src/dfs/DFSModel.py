@@ -43,7 +43,7 @@ class DFSModel:
             log_loss = self.get_binary_crossentropy_loss('log_loss', y_true=self.y, y_pred=network_layers[-1])
             elastic_inp_loss = self.get_elasticnet_loss('elastic_inp_loss', layers=[network_layers[0]],
                                                         lambda_1=self.lambda_1, lambda_2=self.lambda_2)
-            elastic_hid_loss = self.get_elasticnet_loss('elastic_hid_loss', layers=[network_layers[0]],
+            elastic_hid_loss = self.get_elasticnet_loss('elastic_hid_loss', layers=[network_layers[1:]],
                                                         lambda_1=self.alpha_1, lambda_2=self.alpha_2)
             self.loss = log_loss + elastic_inp_loss + elastic_hid_loss
 
